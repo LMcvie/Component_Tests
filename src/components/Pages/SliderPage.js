@@ -3,7 +3,32 @@ import Slider from "../Slider";
 
 const SliderPage = () => {
 
-  const QuestionList= [ <Slider defaultValue = '0' key = '0'text = 'How comfortable are you with CSS?'/>, <Slider defaultValue = '50' key = '1' text = 'How comfortable are you working on release?'/>];
+
+
+  const questions = 
+  [
+    {
+      defaultValue: '0',
+      text: 'How confident are you with CSS?'
+  
+    },
+    {
+      defaultValue: '50',
+      text: 'How confident are you working on release?'
+    },
+    {
+      defaultValue:'80',
+      text:'How confident are you with react router'
+    }
+
+  ]
+
+  const QuestionList = questions.map((question,index) => {
+    return (
+        <Slider question = {question} key = {index} id= {index}></Slider>
+    );
+});
+
 
   return (
   <div>

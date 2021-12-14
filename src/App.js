@@ -6,6 +6,7 @@ import SpiderChartPage from './components/Pages/SpiderChartPage';
 import NavBar from './components/NavBar';
 import ErrorPage from './components/Pages/ErrorPage';
 
+
 const App = ()=> {
 
   return (
@@ -15,9 +16,9 @@ const App = ()=> {
       <Router>
         <NavBar/>
         <Routes>
-          <Route path="/" element={<ProgressBarPage/>}/>
-          <Route path ="/about" element ={<SliderPage/>}/>
-          <Route path ="/pricing" element = {<SpiderChartPage/>}/>
+          <Route path="/Compontent_Tests" element={<ProgressBarPage/>}/>
+          <Route path ="/Compontent_Tests/Slider" element ={<SliderPage/>}/>
+          <Route path ="/Compontent_Tests/Spider" element = {<SpiderChartPage/>}/>
           <Route path ='/*' element ={<ErrorPage/>}/> 
         </Routes>
       </Router>
