@@ -16,7 +16,7 @@ const App = ()=> {
       <Router>
         <NavBar/>
         <Routes>
-          <Route path="/Compontent_Tests" element={<SliderPage/>}/>
+          <Route path="/Compontent_Tests/" element={<SliderPage/>}/>
           <Route path ="/Compontent_Tests/Progress" element ={<ProgressBarPage/>}/>
           <Route path ="/Compontent_Tests/Spider" element = {<SpiderChartPage/>}/>
           <Route path ='/*' element ={<ErrorPage/>}/> 
