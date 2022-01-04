@@ -17,11 +17,12 @@ const App = ()=> {
       <Router>
         <NavBar/>
         <Routes>
-          <Route path="/Slider" element={<SliderPage/>}/>
-          <Route path ="/Progress" element ={<ProgressBarPage/>}/>
-          <Route path ="/Spider" element = {<SpiderChartPage/>}/>
-          <Route path = "/ScrollList" element ={<ScrollListPage/>}/>
-          <Route path ='/*' element ={<ErrorPage/>}/> 
+        <Route path="/Component_Tests/*" element={<SliderPage/>}/>
+          <Route path="/Component_Tests/Slider" element={<SliderPage/>}/>
+          <Route path ="/Component_Tests/Progress" element ={<ProgressBarPage/>}/>
+          <Route path ="/Component_Tests/Spider" element = {<SpiderChartPage/>}/>
+          <Route path = "/Component_Tests/ScrollList" element ={<ScrollListPage/>}/>
+          {/* <Route path ='/*' element ={<ErrorPage/>}/>  */}
         </Routes>
       </Router>
     </>

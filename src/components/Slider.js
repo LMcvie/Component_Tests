@@ -2,11 +2,13 @@ import "../components/Slider.css";
 
 
 const Slider = ({ question,id }) => {
+    
     const sliderID = `slider${id}`;
     const valueID = `value${id}`;
     let slider;
     let x;
     let output;
+    
 
     window.addEventListener('DOMContentLoaded', (event) => {
         x= question.defaultValue;

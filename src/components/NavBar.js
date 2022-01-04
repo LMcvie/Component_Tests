@@ -6,16 +6,16 @@ const NavBar = () => {
       //simple a href links to the different pages
     <ul>
       <li>
-        <Link to="/Slider">Slider</Link>
+        <Link to="/Component_Tests/Slider">Slider</Link>
       </li>
       <li>
-        <Link to="/Progress">ProgressBar</Link>
+        <Link to="/Component_Tests/Progress">ProgressBar</Link>
       </li>
       <li>
-        <Link to="/Spider">SpiderChart</Link>
+        <Link to="/Component_Tests/Spider">SpiderChart</Link>
       </li>
       <li>
-        <Link to="/ScrollList">ScrollList</Link>
+        <Link to="/Component_Tests/ScrollList">ScrollList</Link>
       </li>
     </ul>
   )
