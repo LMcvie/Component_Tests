@@ -5,6 +5,7 @@ import ProgressBarPage from './components/Pages/ProgressBarPage';
 import SpiderChartPage from './components/Pages/SpiderChartPage';
 import NavBar from './components/NavBar';
 import ErrorPage from './components/Pages/ErrorPage';
+import ScrollListPage from './components/Pages/ScrollListPage'
 
 
 const App = ()=> {
@@ -16,9 +17,10 @@ const App = ()=> {
       <Router>
         <NavBar/>
         <Routes>
-          <Route path="/Compontent_Tests/" element={<SliderPage/>}/>
-          <Route path ="/Compontent_Tests/Progress" element ={<ProgressBarPage/>}/>
-          <Route path ="/Compontent_Tests/Spider" element = {<SpiderChartPage/>}/>
+          <Route path="/Slider" element={<SliderPage/>}/>
+          <Route path ="/Progress" element ={<ProgressBarPage/>}/>
+          <Route path ="/Spider" element = {<SpiderChartPage/>}/>
+          <Route path = "/ScrollList" element ={<ScrollListPage/>}/>
           <Route path ='/*' element ={<ErrorPage/>}/> 
         </Routes>
       </Router>
